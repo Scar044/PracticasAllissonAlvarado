@@ -1,0 +1,58 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Farsan', cursive;
+}
+.ficha table,
+.ficha td,
+.ficha th{
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+.historia img{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px
+}
+.historia p{
+    text-align: justify;
+}
+.galeria img{
+    width: 300px;
+}
+body {
+font-family: 'Farsan', sans-serif;
+background-color: rgb(241, 206, 166);
+background-size: contain;
+color: #333;
+line-height: 1.6;
+}
+header {
+background-color: #b1631be1;
+color: #fff;
+padding: 10px;
+position: sticky; /* Posicionamiento sticky */
+top: 0;
+z-index: 1000; /*Este elemento estará muy por encima de cualquier otro*/
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly; 
+}
+.menu {
+display: flex;
+justify-content: center;
+list-style: none;
+gap: 20px;
+font-size: 0.9rem;
+}
