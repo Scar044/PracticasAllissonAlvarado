@@ -1,22 +1,57 @@
 @import 
 url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+main {
+  max-width: 1300px;
+  margin: auto;
+}
 
-h1{
+h1, h2{
     text-align: center;
     font-family: 'Farsan', cursive;
+}
+p{
+    font-family: 'Noto Serif Display', serif;
+}
+#s1 a{
+    color: black;
+    transition: 0.3s;
+}
+#s1 a:hover{
+    color:#b1631be1;
+}
+.menu a{
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color: rgb(241, 206, 166);
+    text-decoration: underline;
+}
+body img{
+    border-radius: 30px;
+    min-width: 250px;
 }
 .ficha table,
 .ficha td,
 .ficha th{
-    border:1px solid black;
-    border-collapse: collapse;
+    border:2px solid #b1631be1;
     text-align: left;
+}
+.ficha th{
+    background-color: antiquewhite;
+}
+.ficha table{
+    border-collapse: collapse;
 }
 .historia img{
     float: right;
@@ -28,31 +63,69 @@ h1{
     text-align: justify;
 }
 .galeria img{
-    width: 300px;
+    width: 100%;
+    max-width: 280px;
+}
+.galeria img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 body {
-font-family: 'Farsan', sans-serif;
-background-color: rgb(241, 206, 166);
-background-size: contain;
-color: #333;
-line-height: 1.6;
+    background-color: #b1631be1;
+    color: #333;
+    line-height: 1.6;
+}
+section {
+  scroll-margin-top: 50px; /* ajusta según la altura de tu header */
+  background-color: rgb(241, 206, 166);
+  padding: 5%;
+  margin: 20px 0;
+  margin-left: 5%;
+  border-radius: 50px;
+  width: 90%;
 }
 header {
-background-color: #b1631be1;
-color: #fff;
-padding: 10px;
-position: sticky; /* Posicionamiento sticky */
-top: 0;
-z-index: 1000; /*Este elemento estará muy por encima de cualquier otro*/
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-evenly; 
+    background-color: #b1631be1;
+    color: #fff;
+    padding: 10px;
+    position: sticky; /* Posicionamiento sticky */
+    top: 0;
+    z-index: 1000; /*Este elemento estará muy por encima de cualquier otro*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; 
+    font-size: x-large;
+}
+footer {
+    background-color: #b1631be1;
+    color: #fff;
+    padding: 5px;
+    position: sticky; /* Posicionamiento sticky */
+    bottom: 0;
+    z-index: 1000; /*Este elemento estará muy por encima de cualquier otro*/
+}
+footer p{
+    font-size: small;
 }
 .menu {
-display: flex;
-justify-content: center;
-list-style: none;
-gap: 20px;
-font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    font-size: large;
+
+}
+#nombre,
+#apellido,
+#edad,
+#correo,
+#numero{
+    background-color:antiquewhite ;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
