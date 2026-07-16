@@ -1,0 +1,8 @@
+.correcto{
+    background-color: greenyellow;
+    color: green;
+}
+.incorrecto{
+    background-color: palevioletred;
+    color: red;
+}
